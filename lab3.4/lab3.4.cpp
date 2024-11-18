@@ -1,11 +1,5 @@
-﻿// Lab_03_4.cpp
-// < Чапля Максим >
-// Лабораторна робота № 3.4
-// Розгалуження, задане плоскою фігурою.
-// Варіант 34
-
-#include <iostream>
-#include <cmath> 
+#include <iostream>;
+#include <cmath>;
 
 using namespace std;
 
