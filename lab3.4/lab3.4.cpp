@@ -13,11 +13,11 @@ int main() {
 
     double distanceSquared = x * x + y * y;
 
-    bool A = (distanceSquared >= pow(R1, 2) && distanceSquared <= pow(R2, 2) && x > 0 && y > 0);
-    bool B = (distanceSquared >= pow(R1, 2) && distanceSquared <= pow(R2, 2) && x < 0 && y < 0);
+    bool A = (distanceSquared >= pow(R2, 2) && distanceSquared <= pow(R1, 2) && x > 0 && y > 0);
+    bool B = (distanceSquared >= pow(R2, 2) && distanceSquared <= pow(R1, 2) && x < 0 && y < 0);
 
-    if ((distanceSquared >= R1 * R1 && distanceSquared <= R2 * R2) &&
-        ((x > 0 && y > 0) || (x < 0 && y < 0))) {
+    if (A || B)
+    {
         cout << "yes" << endl;
     }
     else {
